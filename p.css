@@ -1,0 +1,177 @@
+.resume-slide {
+    animation: slideRight 0.8s linear forwards;
+}
+@keyframes slideRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+.service-slide1 {
+    animation: slideBottom1 0.3s linear forwards;
+}
+@keyframes slideBottom1 {
+    0% {
+        transform: translateY(90%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.service-slide2 {
+    animation: slideBottom2 0.5s linear forwards;
+}
+@keyframes slideBottom2 {
+    0% {
+        transform: translateY(190%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.service-slide3 {
+    animation: slideBottom3 0.5s linear forwards;
+}
+@keyframes slideBottom3 {
+    0% {
+        transform: translateY(290%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.work-slide1 {
+    animation: slidetop 0.5s linear forwards;
+}
+@keyframes slidetop {
+    0% {
+        transform: translateY(-120%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.work-slide2 {
+    animation: slidetop1 0.5s linear forwards;
+}
+@keyframes slidetop1 {
+    0% {
+        transform: translateY(-200%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.work-slide3 {
+    animation: slidetop2 0.5s linear forwards;
+}
+@keyframes slidetop2 {
+    0% {
+        transform: translateY(-300%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.rotate-border {
+    position: relative;
+    width: 315px;
+    height: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rotate-border::before,
+.rotate-border::after {
+    content: '';
+    position: absolute;
+    border: 4px solid #00FF99;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    animation: rotate-piece 4s linear infinite;
+}
+.rotate-border::after {
+    animation-direction: reverse;
+    animation-delay: 0.1s;
+}
+@keyframes rotate-piece {
+    0% {
+        clip-path: polygon(0% 0%, 25% 0%, 25% 100%, 0% 100%);
+        transform: rotate(0deg);
+    }
+    25% {
+        clip-path: polygon(25% 0%, 50% 0%, 50% 100%, 25% 100%);
+        transform: rotate(90deg);
+    }
+    50% {
+        clip-path: polygon(50% 0%, 75% 0%, 75% 100%, 50% 100%);
+        transform: rotate(180deg);
+    }
+    75% {
+        clip-path: polygon(75% 0%, 100% 0%, 100% 100%, 75% 100%);
+        transform: rotate(270deg);
+    }
+    100% {
+        clip-path: polygon(0% 0%, 25% 0%, 25% 100%, 0% 100%);
+        transform: rotate(360deg);
+    }
+}
+.animated-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 255, 153, 0.6);
+    border-radius: 50%;
+    animation: move 15s linear infinite;
+}
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(calc(100vw - 8px), calc(100vh - 8px));
+    }
+    50% {
+        transform: translate(calc(-100vw + 8px), calc(-100vh + 8px));
+    }
+    75% {
+        transform: translate(calc(100vw - 8px), calc(100vh + 8px));
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animated-letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 1s forwards;
+}
+.hidden {
+    display: none;
+}
+.active-button {
+    background-color: #22c55e;
+}

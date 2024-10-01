@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Tajamal Hussain</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./p.css">
+</head>
+
+<body class="bg-gray-950 text-white">
+    <nav class="flex justify-between items-center p-5 bg-gray-800/55">
+        <div class="text-2xl font-bold">TAJAMAL.</div>
+        <ul class="flex space-x-6 justify-center items-center">
+            <button><a id="Page1"
+                    class="nav-btn hover:text-white font-semibold w-12 p-3 h-12 hover:bg-green-500  rounded-lg">Home</a></button>
+            <button><a id="Page2"
+                    class="nav-btn hover:text-white font-semibold w-12 p-3 h-12 hover:bg-green-500  rounded-lg">Services</a></button>
+            <button><a id="Page3"
+                    class="nav-btn hover:text-white font-semibold w-12 p-3 h-12 hover:bg-green-500  rounded-lg">Resume</a></button>
+            <button><a id="Page4"
+                    class="nav-btn hover:text-white font-semibold w-12 p-3 h-12 hover:bg-green-500  rounded-lg">Work</a></button>
+            <button><a id="Page5"
+                    class="nav-btn hover:text-white font-semibold w-12 p-3 h-12 hover:bg-green-500  rounded-lg">Contact</a></button>
+            <button><a id="Page6"
+                    class="nav-btn hover:text-white font-semibold w-12 p-3 h-12 hover:bg-green-500 rounded-lg">Hire
+                    me</a></button>
+        </ul>
+    </nav>
+
+    <section class="section-content">
+        <!-- Home Section -->
+        <section
+            class="relative section-with-dots flex flex-col md:flex-row justify-center items-center space-y-8 p-16 h-screen md:space-y-0 overflow-hidden">
+            <div class="text-center md:text-left md:w-[90%] space-y-4">
+                <p class="text-green-500">Software Developer</p>
+                <h1 class="text-4xl md:text-6xl font-bold">
+                    Hello I'm <span class="text-green-500" id="animated-text">TAJAMAL HUSSAIN</span>
+                </h1>
+                <p class="max-w-md mx-auto md:mx-0">I excel at crafting elegant digital experiences.</p>
+            </div>
+            <div class="md:w-full flex justify-center">
+                <div class="rotate-border">
+                    <img src="./IMG-20230424-WA0087.jpg" alt="Luke Coleman"
+                        class="rounded-full object-top object-cover w-72 h-72">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Services Section -->
+        <section
+            class="hidden section-with-dots relative flex flex-col md:flex-row justify-center items-center space-y-8 p-16 h-screen md:space-y-0 overflow-hidden">
+
+            <div class="text-center md:text-left md:w-[90%] space-y-4 relative z-10 ">
+                <h1 class="text-4xl md:text-6xl font-bold"> Services</h1>
+                <p class="max-w-md mx-auto md:mx-0">i offer a range of services tailored to meet your needs. Whether
+                    you're looking for web development, software solutions, or consultancy, we've got you covered.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+                <div class="p-6 bg-gray-900 rounded-lg shadow-lg service-slide1">
+                    <h2 class="text-2xl font-bold mb-4">Web Development</h2>
+                    <p class="text-gray-400">Creating modern, responsive websites that look great on all devices and
+                        meet your business needs.</p>
+                </div>
+                <div class="p-6 bg-gray-900 rounded-lg shadow-lg service-slide2">
+                    <h2 class="text-2xl font-bold mb-4">Software Solutions</h2>
+                    <p class="text-gray-400">Developing custom software solutions to streamline your operations and
+                        improve efficiency.</p>
+                </div>
+                <div class="p-6 bg-gray-900 rounded-lg shadow-lg service-slide3">
+                    <h2 class="text-2xl font-bold mb-4">Consultancy</h2>
+                    <p class="text-gray-400">Providing expert advice to help you navigate challenges and achieve your
+                        business goals.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section
+            class="hidden section-with-dots relative flex flex-col md:flex-row justify-center items-center space-y-8 p-16 h-screen md:space-y-0 overflow-hidden">
+
+            <div class="text-center md:text-left md:w-[90%] space-y-4 relative z-10 ">
+                <h1 class="text-4xl md:text-6xl font-bold">Resume</h1>
+                <p class="max-w-md mx-auto md:mx-0">Here is a summary of my professional journey, skills, and
+                    accomplishments. You can also download my full resume in PDF format.</p>
+                <button
+                    class="mt-6 px-6 py-2 border border-green-500 rounded-full hover:bg-green-500 hover:text-black">Download
+                    Resume</button>
+                <div class="flex space-x-4 justify-center md:justify-start mt-4">
+                    <a href="#" class="text-green-500">🔗</a>
+                    <a href="#" class="text-green-500">🔗</a>
+                    <a href="#" class="text-green-500">🔗</a>
+                    <a href="#" class="text-green-500">🔗</a>
+                </div>
+            </div>
+
+            <div class="py-10 bg-gray-900/55 text-center p-4 flex flex-col gap-4 resume-slide rounded-lg w-[100%]">
+                <div class="max-w-4xl mx-auto flex flex-col gap-4">
+                    <h2 class="text-3xl font-bold mb-6">Education & Skills</h2>
+                    <p class="text-gray-400">Intermediate in Computer Sciences, specializing in foundational principles
+                        of programming, data structures, algorithms, and software development. During this period, I
+                        developed a strong grasp of:</p>
+                    <ul class="list-disc text-left px-4 mx-auto max-w-xl text-gray-400 flex flex-col gap-2">
+                        <li><strong>HTML:</strong> Expertise in structuring web content with semantic HTML for enhanced
+                            accessibility and SEO.</li>
+                        <li><strong>CSS:</strong> Proficient in creating responsive layouts, handling cross-browser
+                            compatibility, and using CSS frameworks.</li>
+                        <li><strong>SASS:</strong> Experience with SASS for modular, maintainable, and DRY styling using
+                            variables, mixins, and nested rules.</li>
+                        <li><strong>Tailwind CSS:</strong> Skilled in utilizing Tailwind’s utility-first CSS approach
+                            for rapid UI development.</li>
+                        <li><strong>JavaScript:</strong> Solid understanding of vanilla JavaScript for dynamic web
+                            content, DOM manipulation, and API integration.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Work Section -->
+        <section
+            class="hidden section-with-dots relative flex flex-col md:flex-row justify-center gap-3 items-center space-y-8 p-16 h-screen md:space-y-0 overflow-hidden">
+
+            <div class="text-center md:text-left md:w-[90%] space-y-4 relative z-10">
+                <h1 class="text-4xl md:text-6xl font-bold"> Work</h1>
+                <p class="max-w-md mx-auto md:mx-0">Explore some of my recent projects. Each project demonstrates the
+                    range of skills and expertise I bring to every job.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 work-slide">
+                <div class="p-6 bg-gray-900 rounded-lg shadow-lg work-slide1">
+                    <h2 class="text-2xl font-bold mb-4">Project One</h2>
+                    <p class="text-gray-400">A full-stack web application designed for an e-commerce business.
+                        Implemented with React, Node.js, and MongoDB.</p>
+                </div>
+                <div class="p-6 bg-gray-900 rounded-lg shadow-lg work-slide2">
+                    <h2 class="text-2xl font-bold mb-4">Project Two</h2>
+                    <p class="text-gray-400">Mobile app developed for a fitness startup, focusing on user experience and
+                        seamless integration with wearable devices.</p>
+                </div>
+                <div class="p-6 bg-gray-900 rounded-lg shadow-lg work-slide3">
+                    <h2 class="text-2xl font-bold mb-4">Project Three</h2>
+                    <p class="text-gray-400">Consultancy for a large corporate client to improve their software
+                        development process and implement agile methodologies.</p>
+                </div>
+            </div>
+        </section>
+        <section
+            class="hidden section-with-dots relative flex flex-col justify-center items-center space-y-8 p-16 h-screen overflow-hidden">
+
+            <div class="text-center space-y-4 relative z-10">
+                <h1 class="text-4xl md:text-6xl font-bold">Contact Me</h1>
+                <p class="max-w-md">Have any questions or want to work together? Fill out the form below, and I'll get
+                    back to you as soon as possible!</p>
+            </div>
+
+            <form class="w-full max-w-md space-y-4">
+                <div class="flex flex-col">
+                    <label for="name" class="mb-2">Name</label>
+                    <input type="text" id="name" class="p-3 bg-gray-800 text-white rounded-md">
+                </div>
+                <div class="flex flex-col">
+                    <label for="email" class="mb-2">Email</label>
+                    <input type="email" id="email" class="p-3 bg-gray-800 text-white rounded-md">
+                </div>
+                <div class="flex flex-col">
+                    <label for="message" class="mb-2">Message</label>
+                    <textarea id="message" rows="5" class="p-3 bg-gray-800 text-white rounded-md"></textarea>
+                </div>
+                <button type="submit" onclick="event.preventDefault()"
+                    class="w-full bg-green-500 text-black p-3 rounded-md font-semibold hover:bg-green-600">Send
+                    Message</button>
+            </form>
+        </section>
+        <section
+            class="hidden section-with-dots relative flex flex-col md:flex-row justify-center gap-3 items-center space-y-8 p-16 h-screen md:space-y-0 overflow-hidden">
+
+            <div class="text-center md:text-left md:w-[90%] space-y-4 relative z-10">
+                <h1 class="text-4xl md:text-6xl font-bold">Hire me</h1>
+                <p class="max-w-md mx-auto md:mx-0">Ready to bring your project to life? Whether it's web development,
+                    software solutions, or consultancy, I’m here to help. Let's work together to achieve your goals.</p>
+            </div>
+            <div class="w-full max-w-md bg-gray-900 rounded-lg p-6 space-y-4 shadow-lg">
+                <form action="" method="POST" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-400">Your Name</label>
+                        <input type="text" name="name" id="name"
+                            class="mt-1 block w-full p-2 bg-gray-800 rounded-md border border-gray-700 text-white focus:ring-green-500 focus:border-green-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-400">Your Email</label>
+                        <input type="email" name="email" id="email"
+                            class="mt-1 block w-full p-2 bg-gray-800 rounded-md border border-gray-700 text-white focus:ring-green-500 focus:border-green-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-400">Your Message</label>
+                        <textarea name="message" id="message" rows="4"
+                            class="mt-1 block w-full p-2 bg-gray-800 rounded-md border border-gray-700 text-white focus:ring-green-500 focus:border-green-500"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit"
+                            class="w-full bg-green-500 text-black font-semibold px-4 py-2 rounded-md">Send
+                            Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </section>
+
+    <footer id="footer" class="py-5 bg-gray-800/55 text-center text-white">
+        <p>&copy; 2024 TAJAMAL HUSSAIN. All rights reserved.</p>
+    </footer>
+
+    <script src="./p.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
